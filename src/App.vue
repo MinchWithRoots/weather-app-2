@@ -1,5 +1,5 @@
 <template>
-  <div class="weather">
+  <div class="weather" :class="weatherClass">
     <div class="container">
 
       <div class="card weather-form">
@@ -25,9 +25,9 @@
     <div class="weather-bg">
       <div>
         <img class="weather-bg_img bg" src="./assets/bg.jpg" alt="App Background">
-        <img class="weather-bg overcast" src="./assets/overcast.jpg" alt="Overcast">
-        <img class="weather-bg partly-cloudy" src="./assets/partly-cloudy.jpg" alt="Partly-cloudy">
-        <img class="weather-bg sunny" src="./assets/sunny.jpg" alt="Sunny">
+        <img class="weather-bg_img overcast" src="./assets/overcast.jpg" alt="Overcast">
+        <img class="weather-bg_img partly-cloudy" src="./assets/partly-cloudy.jpg" alt="Partly-cloudy">
+        <img class="weather-bg_img sunny" src="./assets/sunny.jpg" alt="Sunny">
       </div>
     </div>
   </div>
@@ -47,8 +47,18 @@ export default {
    };
   },
   computed: {
-
-  },
+    weatherClass() {
+      if (this.description.includes('Sunny')) {
+        return 'sunny';
+     } else if (this.description.includes('Overcast')) {
+       return 'overcast';
+     } else if (this.description.includes('Partly cloudy')) {
+       return 'partly-cloudy';
+     } else {
+       return '';
+     }
+   }
+ },
   methods: {
     weatherSearch() {
       this.loading = true;
