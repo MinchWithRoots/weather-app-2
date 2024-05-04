@@ -7,6 +7,8 @@
         <button class="weather-form_btn">Search</button>
       </div>
 
+      <div class="card weather-load">Loading...</div>
+
       <div class="weather-info">
         <div class="weather-info_text">
           <p class="card">Phuket</p>

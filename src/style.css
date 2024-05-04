@@ -151,4 +151,28 @@ input, button {
   padding: 10px 15px;
   box-sizing: border-box;
   cursor: pointer;
+  transition: var(--tr);
+}
+
+.weather-form_btn:hover {
+  background-color: var(--accent);
+}
+
+.weather-form,
+.weather-load,
+.weather-info {
+  grid-column: 1 / 4;
+}
+
+.weather-load {
+  display: flex;
+  align-items: center;
+  height: 87px;
+}
+
+.weather-info_text {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 20px;
+  font-size: 40px;
 }
