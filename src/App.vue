@@ -3,7 +3,7 @@
     <div class="container">
 
       <div class="card weather-form">
-        <input type="text" class="weather-form_input" v-model="searchQuery" @keyup.enter="weatherSearch" placeholder="enter city"> 
+        <input type="text" class="weather-form_input" v-model="searchQuery" @keyup.enter="weatherSearch" placeholder="Enter city"> 
         <button class="weather-form_btn" @click="weatherSearch">Search</button>
       </div>
 
