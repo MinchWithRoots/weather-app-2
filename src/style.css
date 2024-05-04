@@ -103,6 +103,71 @@ input, button {
   opacity: 1;
 }
 
+.weather.light-snow .weather-bg_img:not(.light-snow) {
+  opacity: 0;
+}
+
+.weather.light-snow .weather-bg_img.light-snow {
+  opacity: 1;
+}
+
+.weather.snow .weather-bg_img:not(.snow) {
+  opacity: 0;
+}
+
+.weather.snow .weather-bg_img.snow {
+  opacity: 1;
+}
+
+.weather.heavy-snow .weather-bg_img:not(.heavy-snow) {
+  opacity: 0;
+}
+
+.weather.heavy-snow .weather-bg_img.heavy-snow {
+  opacity: 1;
+}
+
+.weather.rain-and-snow .weather-bg_img:not(.rain-and-snow) {
+  opacity: 0;
+}
+
+.weather.rain-and-snow .weather-bg_img.rain-and-snow {
+  opacity: 1;
+}
+
+.weather.light-rain .weather-bg_img:not(.light-rain) {
+  opacity: 0;
+}
+
+.weather.light-rain .weather-bg_img.light-rain {
+  opacity: 1;
+}
+
+.weather.moderate-rain .weather-bg_img:not(.moderate-rain) {
+  opacity: 0;
+}
+
+.weather.moderate-rain .weather-bg_img.moderate-rain {
+  opacity: 1;
+}
+
+.weather.heavy-intensity-rain .weather-bg_img:not(.heavy-intensity-rain) {
+  opacity: 0;
+}
+
+.weather.heavy-intensity-rain .weather-bg_img.heavy-intensity-rain {
+  opacity: 1;
+}
+
+.weather.very-heavy-rain .weather-bg_img:not(.very-heavy-rain) {
+  opacity: 0;
+}
+
+.weather.very-heavy-rain .weather-bg_img.very-heavy-rain {
+  opacity: 1;
+}
+
+
 .container {
   width: 100%;
   max-width: 1000px;
