@@ -75,6 +75,8 @@ input, button {
   transition: var(--tr) ease-in-out;
 }
 
+/* if condition doesn't match, then it's hidden*/
+
 .weather-bg_img.bg {
   opacity: 1;
 }
@@ -240,4 +242,44 @@ input, button {
   grid-template-columns: 1fr auto auto;
   gap: 20px;
   font-size: 40px;
+}
+
+/* for other screen formats */
+@media screen and (min-width:100px) and (max-width:1024px) {
+  .container {
+    width: 80%;
+  }
+  .card {
+    padding: 15px 20px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width:100px) and (max-width:768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr 10px 5px;
+    gap: 20px;
+    padding: 10px 10px;
+  }
+  .card {
+    padding: 10px 10px;
+    font-size: 20px;
+  }
+
+  .weather-form_btn {
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+
+  .weather-form_input {
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+
+  .weather-form {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+  }
 }

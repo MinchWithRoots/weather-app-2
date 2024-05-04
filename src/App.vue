@@ -22,6 +22,7 @@
       
     </div>
 
+    <!-- images -->
     <div class="weather-bg">
       <div>
         <img class="weather-bg_img bg" src="./assets/bg.jpg" alt="App Background">
@@ -55,7 +56,7 @@ export default {
      loading: false,
      error: false,
    };
-  },
+  },   //change images that include weather condition
   computed: {
     weatherClass() {
       if (this.description.includes('Sunny')) {
@@ -89,7 +90,7 @@ export default {
   methods: {
     weatherSearch() {
       this.loading = true;
-      this.error = false;
+      this.error = false;  //api connection
       fetch(`https://api.weatherapi.com/v1/current.json?key=69ed7b91ab4b4d4f9f282327242604&q=${this.searchQuery}`)
       .then(response => response.json())
        .then(data => {
@@ -104,7 +105,7 @@ export default {
         this.error = true;
         console.error(error);
       });
-    },
+    },  //resetting search 
     resetSearchQuery() {
       this.searchQuery = '';
     }
