@@ -29,9 +29,9 @@
         <img class="weather-bg_img partly-cloudy" src="./assets/partly-cloudy.jpg" alt="Partly-cloudy">
         <img class="weather-bg_img sunny" src="./assets/sunny.jpg" alt="Sunny">
         <!-- snow -->
-        <img class="weather-bg_img light-snow" src="./assets/light snow.jpg" alt="light snow">
+        <img class="weather-bg_img light-snow" src="./assets/light-snow.jpg" alt="light snow">
         <img class="weather-bg_img snow" src="./assets/snow.jpg" alt="snow">
-        <img class="weather-bg_img heavy-snow" src="./assets/heavy snow.jpg" alt="heavy snow">
+        <img class="weather-bg_img heavy-snow" src="./assets/heavy-snow.jpg" alt="heavy snow">
         <img class="weather-bg_img rain-and-snow" src="./assets/rain-and-snow.jpg" alt="rain and snow">
         <!-- rain -->
         <img class="weather-bg_img light-rain" src="./assets/light-rain.jpg" alt="light rain">
